@@ -1,0 +1,70 @@
+    .banner {
+        text-align: center;
+        width: 0.5;
+    }
+          
+    h1 {
+        color: green;
+    }
+        
+    /* styling sidebar */
+    .sidehoverbar a {
+        background-color: grey;
+        position: absolute;
+        font-size: 22px;
+        text-decoration: none;
+        Color: white;
+        padding: 10px;
+        border-radius: 0px 25px 25px 0px;
+        left: -190px;
+        transition: 0.5s;
+        opacity: 0.5;
+    }
+        
+    /* Hover effect on sidebar */
+    .sidehoverbar a:hover {
+        left: 0px;
+        opacity: 1;
+        background-color: #4CAF50;
+    }
+        
+    /* float icons*/
+    .sidehoverbar i {
+        float: right;
+    }
+        
+    /* defining position of each nav bar */
+    .article {
+        top: 50px;
+        width: 210px;
+        height: 30px;
+    }
+          
+    .Interview {
+        top: 110px;
+        width: 210px;
+        height: 30px;
+    }
+          
+    .Scripter {
+        top: 170px;
+        width: 210px;
+        height: 30px;
+    }
+          
+    .Suggested {
+        top: 230px;
+        width: 210px;
+        height: 30px;
+    }
+          
+    .Practice {
+        top: 290px;
+        width: 210px;
+        height: 30px;
+    }
+        
+    /* content margin */
+    .hoverable-topic {
+        margin-left: 55px;
+    }

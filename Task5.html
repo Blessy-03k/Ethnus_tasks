@@ -1,0 +1,118 @@
+<html xmlns="http://www.w3.org/1999/xhtml">  
+  
+<head runat="server">  
+    <title>Sample Registration Page</title>  
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 5px;
+          text-align: left;
+        }
+        table.names {
+          width: 100%;    
+          background-color: lightseagreen;
+        }
+    </style> 
+</head>  
+<body>  
+    <form id="form1" runat="server">  
+        <div>  
+            <table class="style1">  
+                <tr>  
+                    <td>First Name:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtFirstName" runat="server"></asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Last Name:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtLastName" runat="server"></asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Email:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtEmail" runat="server"></asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Password:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtPassword" runat="server"  
+                                     TextMode="Password"></asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Re-enter Password:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtRePassword" runat="server"  
+                                     TextMode="Password"></asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Gender:</td>  
+                    <td>  
+                        <asp:DropDownList ID="DropDownList1" runat="server"  
+                                          AppendDataBoundItems="true">  
+                            <asp:ListItem Value="-1">Male</asp:ListItem>   
+                        </asp:DropDownList>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Age:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtAge" runat="server"></asp:TextBox>  
+                    </td>  
+                </tr> 
+                <tr>  
+                    <td>Phone Number:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtPhoneNumber" runat="server"></asp:TextBox>  
+                    </td>  
+                </tr> 
+                <tr>  
+                    <td>Address:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtAddress" runat="server"></asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>State:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtState" runat="server"></asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Country:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtCountry" runat="server">
+                            <asp:ListItem Value="-1">Choose your country</asp:ListItem>
+                        </asp:TextBox>  
+                    </td>  
+                </tr>
+                <tr>  
+                    <td>Languages known:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtCountry" runat="server">
+                            <asp:ListItem Value="-1">English  Kannada  Hindi  Telugu</asp:ListItem>
+                        </asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Hereby I declare all the given details are true:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtCountry" runat="server"></asp:TextBox>  
+                    </td>  
+                </tr>
+                
+            </table>  
+        </div>  
+        <asp:Button ID="Button1" runat="server" Text="Save"  
+                    onclick="Button1_Click" />  
+    </form>  
+</body>  
+</html>  

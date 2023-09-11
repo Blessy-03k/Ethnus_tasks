@@ -1,0 +1,92 @@
+<html xmlns="http://www.w3.org/1999/xhtml">  
+  
+<head runat="server">  
+    <title>Sample Registration Page</title>  
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 5px;
+          text-align: left;
+        }
+        table.names {
+          width: 100%;    
+          background-color: lightseagreen;
+        }
+    </style> 
+</head>  
+<body>  
+    <form id="form1" runat="server">  
+        <div>  
+            <table class="style1">  
+                <tr>  
+                    <td>Full Name:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtName" runat="server">
+                            <asp:ListItem Value="-1">Vincent</asp:ListItem>  
+                            <asp:ListItem>Maverick</asp:ListItem>  
+                            <asp:ListItem>Durano</asp:ListItem>  
+                        </asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Username:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtUserName" runat="server">
+                            <asp:ListItem Value="-1">Vinz</asp:ListItem>   
+                        </asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Password:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtPassword" runat="server"  
+                                     TextMode="Password">
+                            <asp:ListItem Value="-1">--------</asp:ListItem>
+                        </asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Re Password:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtRePassword" runat="server"  
+                                     TextMode="Password">
+                            <asp:ListItem Value="-1">--------</asp:ListItem>
+                        </asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Address:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtAddress" runat="server">
+                            <asp:ListItem Value="-1">Cebu</asp:ListItem>  
+                            <asp:ListItem>Philippines</asp:ListItem> 
+                        </asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Age:</td>  
+                    <td>  
+                        <asp:TextBox ID="TxtAge" runat="server">
+                            <asp:ListItem Value="-1">22</asp:ListItem>  
+                        </asp:TextBox>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>Gender:</td>  
+                    <td>  
+                        <asp:DropDownList ID="DropDownList1" runat="server"  
+                                          AppendDataBoundItems="true">  
+                            <asp:ListItem Value="-1">Male</asp:ListItem>   
+                        </asp:DropDownList>  
+                    </td>  
+                </tr>  
+            </table>  
+        </div>  
+        <asp:Button ID="Button1" runat="server" Text="Save"  
+                    onclick="Button1_Click" />  
+    </form>  
+</body>  
+</html>  
